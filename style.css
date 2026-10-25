@@ -1,0 +1,288 @@
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+}
+
+.orange_box {
+    background-color: #ff2929;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 160px;
+    height: 140px;
+    /* margin-left: 40px; */
+    margin-bottom: -50px;
+    /* font-family: sans-serif; */
+
+}
+.logo svg{
+    max-width: 90px;
+    height: auto;
+}
+.logo_name {
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+.logo_paragraph{
+    margin-top: 3px;
+    font-size: 15px;
+}
+.logo_name h3, .logo_paragraph p{
+    color: black;
+}
+
+.nav{
+    display: flex;
+    gap: 30px;
+    
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    /* font-family: sans-serif; */
+}
+.log_in{
+    display: flex;
+    gap: 20px;
+    align-items: center;   
+}
+.log_in img{
+    width: 40px;
+    height: auto;
+    border-radius: 100%;;
+}
+.log_in a{
+    text-decoration: none;
+    color : #ff2929;;
+    /* font-family: sans-serif; */
+}
+.head {
+    display: flex;
+    gap: 15px;
+}
+
+
+/*  main tag start*/ 
+
+main{
+    width: 100%;
+
+}
+
+.first_section{
+    background-image: url(./pictures/9f0f7204-b34e-49b6-8510-1ad3b48a50dd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    /* margin:0; */
+
+   display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+.content-box{
+    
+    /* max-width: 980px; */
+    color:#ffffff;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.content-box h1{
+    font-size: 65px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    line-height: 1.3em;
+}
+.content-box p {
+    max-width: 510px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.content-box a{
+    display:inline-block;
+    color: black;
+    font-size: 17px;
+    border: 0 solid white;
+    background-color: #ffffff;
+    padding: 16px 28px;
+}
+
+
+/* our trail section */
+/* es container imistvisaa rom section nawili shemoiwios da ekranis gverdebs ar miekras leptopis versiaze */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 20px;
+}
+.our-trail{
+    display: flex;
+    width:100%;
+    background-color: black;
+    margin-top: -90px;
+    color: #ffffff;
+}
+.our-trail-data{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 50px 0 50px;
+}
+.our-trail-picture img{
+    height: 900px;
+}
+.half-day, .full-day, .winter-walk, .ski-tour{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 29px 0 ;
+    
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.data h3{
+    font-size: 22px;
+}
+.data p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.our-trail-data h2{
+    font-size: 40px;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+.book a{
+    font-size:16px;
+    border: 0 solid red;
+    background-color: red;
+    color: black;
+    padding: 12px 30px;
+}
+
+
+
+
+
+
+@media (max-width: 992px){
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .our-trail{
+        flex-direction: column-reverse;
+        gap: 50px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .our-trail-picture img {
+        width: 100%;
+        height: 1300px;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:768px) {
+    header{
+        padding: 0 20px 0 20px;
+    }
+    .head{
+        display: none;
+    }
+
+    
+}
+@media (max-width: 596px){
+    .our-trail-picture img{
+        height: 500px;
+        object-position: center 70%;;
+    }
+    header{
+        padding: 0;
+    }
+
+    .content-box h1{
+        font-size: 29px;
+    }
+   .content-box{
+    padding-right:10px;
+    padding-left: 10px;
+   }
+   .content-box p, .content-box a{
+    font-size: 15px;
+   }
+   .content-box a {
+    padding: 12px 24px;
+   }
+
+   .half-day, .full-day, .winter-walk, .ski-tour{
+    flex-direction:column;
+    gap: 30px;
+   }
+   .book{
+    width: 100%;
+   }
+   .book a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+   }
+   .data h3{
+    font-size: 20px;
+   }
+   .first_section{
+        margin-top: 50.5px;
+    }
+   
+}
+@media(max-width: 500px){
+    
+        .orange_box{
+            width: 120px;
+            height: 117px;
+            box-sizing: border-box;
+
+        }
+        .logo_name h3{
+            font-size: 13px;
+        }
+        .logo_paragraph p{ 
+            font-size: 12px;
+        }
+        svg{
+            width:72px;
+        }
+    
+}
+
