@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/static/Montserrat-Light.ttf)
+}
+@font-face {
+    font-family: 'Montserrat1';
+    src: url(./fonts/static/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: 'Montserrat2';
+    src: url(./fonts/static/Montserrat-Bold.ttf);
+}
+
+
 header {
     background-color: black;
     display: flex;
@@ -15,10 +29,7 @@ header {
     text-align: center;
     width: 160px;
     height: 140px;
-    /* margin-left: 40px; */
     margin-bottom: -50px;
-    /* font-family: sans-serif; */
-
 }
 .logo svg{
     max-width: 90px;
@@ -65,7 +76,6 @@ header {
 .log_in a{
     text-decoration: none;
     color : #ff2929;;
-    /* font-family: sans-serif; */
 }
 .head {
     display: flex;
@@ -87,8 +97,6 @@ main{
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
-    /* margin:0; */
-
    display:flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +114,6 @@ main{
 
 .content-box h1{
     font-size: 65px;
-    font-family: sans-serif;
     font-weight: bold;
     letter-spacing: 0.01em;
     line-height: 1.3em;
@@ -118,6 +125,7 @@ main{
     margin-top: 25px;
     font-size: 17px;
     margin-bottom: 30px;
+    font-family: 'Montserrat';
 }
 .content-box a{
     display:inline-block;
@@ -127,6 +135,8 @@ main{
     background-color: #ffffff;
     padding: 16px 28px;
 }
+
+
 
 
 /* our trail section */
@@ -170,6 +180,7 @@ main{
 .data p {
     font-size: 16px;
     line-height: 1.5;
+    font-family: 'Montserrat1';
 }
 .our-trail-data h2{
     font-size: 40px;
@@ -186,14 +197,231 @@ main{
 }
 
 
+/* icon section style */
+.make{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;    
+    padding-right: 20px;
+    padding-left: 20px;    
+    text-align: center;
+
+}
+.make-winter span{
+    font-size: 55px;
+    color: #1c1c1c;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.make-winter p {
+    width: 510px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    line-height: 1.7em;
+    letter-spacing: 0.02em;
+    font-family: 'Montserrat';
+
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 60px;
+    
+}
+.icon-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-item svg {
+    width: 90px;
+    height: auto;
+}
+.icons p{
+    font-size: 22px;
+    text-align: center;
+    padding: 40px;
+}
+.learn-more a{
+    border: 1px solid black;
+    padding: 12px 28px;
+    color: #1c1c1c;
+    font-family: 'Montserrat';
+}
+.learn-more {
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
 
 
+ /* experience section */
+
+ .experience{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+ }
+
+ .experience-said{
+    margin-right: 24px;
+    margin-left: 24px;
+    height: 340px;
+    align-content: center;
+
+ }
+ .experience span {
+    color: #ffffff;
+    font-size: 55px;
+    letter-spacing: 0.01em;
+    font-family: 'Montserrat2'
+ }
+ .experience p {
+    color: #ffffff;
+    font-size:17px;
+    font-family: 'Montserrat';
+    margin-top: 40px;
+ }
 
 
+ /* Sleet News section */
+
+ .sleet-news {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 15vw;
+ }
+ .sleet-news span {
+    font-family: 'Montserrat2';
+    font-size: 55px;
+    padding-bottom: 40px;
+ }
+.sleet-news p {
+    font-family: 'Montserrat1';
+    max-width: 510px;
+    text-align: center;
+    margin: auto;
+}
+
+/* carusel section */
+
+.post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.post1, .post2, .post3 {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #ffffff;
+
+}
+
+.post1_picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.read {
+    margin-top: 70px;
+    text-align: center;
+}
+.all {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    font-family: 'Montserrat2';
+    width: 300px;
+ 
+}
+.post1_text p, .post2_text p, .post3_text {
+    text-align: start;
+
+}
+.post3_text hr {
+    margin-top: 25px;
+}
+.read_more {
+    text-align: center;
+    margin-top: 80px;
+    font-size:17px;
+}
+.read_more a {
+    color: black;
+    font-family: 'Montserrat';
+    border: 1px solid black;
+    padding: 12px 28px;
+  
+}
+.post1_social, .post2_social, .post3_social{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 30px;
+   
+}
+.blog-post-post-list-description-fill {
+    fill: white;
+    width: 16px;
+    height: 20px;
+}
+.heart{
+    fill: none;
+    stroke: #ff3b30;
+    stroke-width: 1px;
+    height: 20px;
+}
+.view_comment{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.view, .comment, .like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+}
+.like {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+@media(max-width: 1200px){
+    .post{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
 @media (max-width: 992px){
     .container{
         padding-left: 0;
         padding-right: 0;
+        margin-right: 0;
     }
 
     .our-trail{
@@ -206,9 +434,30 @@ main{
     
     .our-trail-picture img {
         width: 100%;
-        height: 1300px;
+        object-position: center 60%;;
+
         display: block;
         object-fit: cover;
+    }
+
+    .icons{
+        flex-direction: column-reverse;
+    }
+
+    .experience{
+        flex-direction: column;
+    }
+    .together-photo img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .experience p{
+        max-width: 510px;
+        font-size: 15px;
+
+    }
+     .experience span {
+        font-size: 26px;
     }
 }
 
@@ -219,7 +468,12 @@ main{
     .head{
         display: none;
     }
-
+    .make-winter span{
+        font-size: 26px;
+    }
+    .make-winter p {
+        font-size: 15px;
+    }
     
 }
 @media (max-width: 596px){
@@ -261,8 +515,17 @@ main{
    .data h3{
     font-size: 20px;
    }
-   .first_section{
-        margin-top: 50.5px;
+    .make-winter p{
+        width: 100%;
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        margin: 0 auto;
+
+    }
+    .make-winter span{
+        text-wrap: wrap;
     }
    
 }
@@ -283,6 +546,14 @@ main{
         svg{
             width:72px;
         }
+        .sleet-news span{
+            font-size: 26px;
+        }
+        .sleet-news p{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     
 }
+
 
