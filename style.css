@@ -623,20 +623,7 @@ main{
     }
     .make-winter p {
         font-size: 15px;
-    }
-    /* .footer_nav {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-    .footer_span p{
-        font-size: 15px;
-    }
-    .footer-div{
-        padding: 80px 10px;
-    } */
-    
+    }   
 }
 @media (max-width: 596px){
     .our-trail-picture img{
@@ -686,6 +673,7 @@ main{
         margin: 0 auto;
 
     }
+    
     .make-winter span{
         text-wrap: wrap;
     }
@@ -696,11 +684,7 @@ main{
     .footer_right{
         flex-direction: column;
     }
-    /* .footer_navigation {
-        justify-content: center;
-        text-align: center;
-   
-    } */
+    
    
 }
 @media(max-width: 500px){
