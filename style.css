@@ -40,6 +40,12 @@ header {
     font-weight: 600;
     
 }
+.logo [data-color="2"], .logo [data-color="1"] {
+    fill: #000000;
+} 
+.logo [data-color="1"] {
+    fill: #000000;
+}
 .logo_paragraph{
     margin-top: 3px;
     font-size: 15px;
@@ -51,18 +57,20 @@ header {
 .nav{
     display: flex;
     gap: 30px;
-    
-}
-.navigation {
-    display: flex;
     align-items: center;
+}
+.head {
+     display: flex;
+    align-items: center;
+
 }
 .nav a {
     text-decoration: none;
     color: white;
     font-size: 17px;
-    /* font-family: sans-serif; */
 }
+
+
 .log_in{
     display: flex;
     gap: 20px;
@@ -80,6 +88,31 @@ header {
 .head {
     display: flex;
     gap: 15px;
+}
+/*                          sidebar                    */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    z-index: 999;
+    background-color: black;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a{
+    color: white;
 }
 
 
@@ -217,6 +250,12 @@ main{
     font-weight: bold;
     letter-spacing: normal;
     line-height: normal;
+}
+ .icon-item [data-color="1"] {
+    fill: black;
+}
+.icon-item [data-color="2"] {
+    fill: red;
 }
 .make-winter p {
     width: 510px;
@@ -477,6 +516,10 @@ main{
     gap: 40px; 
 
 }
+.footer_logo svg{
+      max-width: 90px;
+    height: auto;
+}
 .footer_social a, .footer_links a, .footer_book a {
     font-family: 'Montserrat';
 }
@@ -569,11 +612,11 @@ main{
 }
 
 @media (max-width:768px) {
+    .hide_mobile{
+        display: none;
+    }
     header{
         padding: 0 20px 0 20px;
-    }
-    .head{
-        display: none;
     }
     .make-winter span{
         font-size: 26px;
