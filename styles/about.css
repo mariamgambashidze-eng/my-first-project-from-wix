@@ -11,176 +11,53 @@
     src: url(../fonts/static/Montserrat-Bold.ttf);
 }
 
-header,.footer-div, .sidebar{
-        background-color: black;
 
-} 
-header {
-    padding: 0px 60px 0px 60px;
-}
-.orange_box, header, .nav, .head, .log_in, 
-.footer-div, .footer_logo, .footer_right, .footer_navigation, 
-.footer_links,.footer_span , .footer_social ul, .about_mountain, .about_mountain  
+ .about_mountain  
 {
-   
-    display: flex;
+     display: flex;
 }
 
-header,
-.footer_logo {
-    justify-content: space-between;
 
-}
-.orange_box {
-    background-color: #ff2929;
-    width: 160px;
-    height: 140px;
-    margin-bottom: -50px;
-}
-.footer_navigation, .orange_box, .about_mountain, .about_mountain p {
+ .about_mountain p {
         text-align: center;
 
 }
 
-.footer_links, .footer_social ul, .footer-div, .sidebar, .orange_box, .about_mountain, .about_mountain  {
+ .about_mountain  {
         flex-direction: column;
 
 }
 
-.orange_box, .footer_navigation, .about_mountain {
+.about_mountain {
         justify-content: center;
 
 }
-.logo svg, .footer_logo svg{
-    max-width: 90px;
-}
-.logo_name, .footer_logo_name h3 {
-    font-weight: 600;
-    
-}
-.logo [data-color="2"], .logo [data-color="1"] {
-    fill: #000000;
-} 
-.logo [data-color="1"] {
-    fill: #000000;
-}
-.logo_paragraph{
-    margin-top: 3px;
-}
-.footer_logo_paragraph p, .logo_paragraph{
-    font-size: 15px;
-}
-.logo_name h3, .logo_paragraph p, .orange_box{
-    color: black;
-}
 
 
-.head, .log_in, .orange_box, .nav, .about_mountain {
+
+.about_mountain {
     align-items: center;
 
 }
-.nav a {
-    text-decoration: none;
-}
-.footer_span p, .fa-copyright, .footer_book a, 
-.footer_social a, .footer_links a, .nav a, .logo_name,
- .footer_logo_name h3, .about_mountain p {
+
+.fa-copyright, .about_mountain p {
     font-size: 17px;
 
 }
 
-.log_in, .footer-div{
-    gap: 20px;
-}
-.log_in img{
-    width: 40px;
-    border-radius: 100%;;
-}
-.log_in a{
-    text-decoration: none;
-    color : #ff2929;;
-}
-.head {
-    gap: 15px;
-}
-/*                          sidebar                    */
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 50vh;
-    width: 250px;
-    z-index: 999;
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    align-items: start;
-    justify-content: flex-start;
-    padding-left: 10px;
-}
-.footer_links, .sidebar, .nav{
-    gap: 30px;
-}
-
-.sidebar a, .nav a, .footer_span p, .fa-copyright, .footer_book a, 
-.footer_social a, .footer_links a, .footer_logo_paragraph p, .footer_logo_name h3 {
+ .fa-copyright {
     color: white;
 }
 
-/* about the mountain style */
 
 
 
 
-/* footer style */
-.footer-div {
-    height: 35vw;
-    margin-top: 40px;
-    padding: 100px 120px;
-}
-
-.footer_logo {
-    gap: 60px;
-
-}
-.footer_right {
-    gap: 80px;
-    
-}
-
-.footer_navigation, .footer_right, .footer_span, .footer_logo {
-    flex-direction: row;
-}
-
-.footer_span {
-    overflow-wrap: break-word;
-    margin-top: auto;
-    gap: 5px;
-}
 
 
-
-.footer_social ul{
-    gap: 40px; 
-
-}
-
-.log_in img, .logo svg, .footer_logo svg, section {
+section {
        height: auto;
  
-}
-
-.footer_social a, .footer_links a, .footer_book a {
-    font-family: 'Montserrat';
-}
-.footer_book a{
-    padding: 12px 28px;
-    border: 1px solid red;
-    background-color: red;
-}
-.footer_book, .sidebar {
-    padding-top: 20px;
 }
 main{
     width: 100%;
@@ -200,7 +77,7 @@ main{
 
 }
 
-.sidebar li, .footer-div, .footer_logo, .about_mountain {
+ .about_mountain {
     width: 100%;
 }
 
@@ -298,21 +175,6 @@ main{
     border: 2px solid rgb(139, 28, 28);
 
 }
-/* .picture_1234, .picture_5678{
-    display: flex;
-    flex-direction: row;
-    border: 2px solid rgb(129, 31, 31);
-
-}
-.picture_12, .picture_34, .picture_56, .picture_78{
-    display: flex;
-    flex-direction: row;
-    border: 2px solid rgb(187, 23, 23);
-}
-.picture_1 {
-    height: 2%;
-    width: 221px;
-} */
 
 
 
@@ -348,7 +210,7 @@ main{
 }
 
 @media (max-width: 992px) {
-    .footer-div {
+    /* .footer-div {
         height: auto;
        
         padding-left:60px;
@@ -366,25 +228,13 @@ main{
         width: 100%;
         align-items:center;
         margin-top: 20px;
-    }
-    
-    /* .about_mountain p {
-        margin-left: 10px;
-        margin-right: 10px;
-
     } */
+    
+   
     
 }
 @media (max-width:768px) {
-    .hide_mobile{
-        display: none;
-    }
-    header{
-        padding: 0 20px 0 20px;
-    }
-    .footer_right {
-        flex-direction: column;
-    }
+   
     .about_mountain h1 {
         font-size: 27px;
     }
@@ -395,34 +245,10 @@ main{
 }
 
 @media (max-width: 596px) {
-     header{
-        padding: 0;
-    }
-
-    .footer_span p {
-        font-size: 15px;
-    }
-    /* .footer_right{
-        flex-direction: column;
-    } */
+    
 }
 @media(max-width: 500px){
     
-        .orange_box{
-            width: 120px;
-            height: 117px;
-            box-sizing: border-box;
-
-        }
-        .logo_name h3{
-            font-size: 13px;
-        }
-        .logo_paragraph p{ 
-            font-size: 12px;
-        }
-        svg{
-            width:72px;
-        }
        .snow_fall_text span, .adventure_text span, .safety_text span {
         font-size: 20px;
        }
