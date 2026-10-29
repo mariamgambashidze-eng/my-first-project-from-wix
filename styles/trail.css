@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/static/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: 'Montserrat1';
+    src: url(../fonts/static/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: 'Montserrat2';
+    src: url(../fonts/static/Montserrat-Bold.ttf);
+}
+
+
+ .first_section{
+    width: 100%;
+    background-color: #f7f7f7;
+    margin: 0;
+    height: auto;
+    
+}
+.about_trail{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.about_trail h1 {
+    font-size: 55px;
+    font-family: 'Montserrat2';
+    letter-spacing: normal;
+    line-height: normal;
+    padding-bottom: 30px;
+    padding-top: 120px;
+}
+.about_trail p{
+    max-width: 484px;
+    line-height: 1.7em;
+    font-family: 'Montserrat1';
+    overflow-wrap: break-word;
+    padding-bottom: 140px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: -90px auto 0;
+}
+.trail_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 0 auto;
+}
+
+
+.tour-card-text{
+    display: felx;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f7f7f7;
+
+}
+.tour-card-text h2{
+    font-size: 17px;
+    font-family: 'Montserrat2';
+    padding-bottom: 20px;
+}
+.tour-card-text p{
+    font-size: 17px;
+    font-family: 'Montserrat1';
+    padding-bottom: 20px;
+}
+.tour-card-text a{
+    padding: 12px 28px;
+    font-size: 17px;
+    font-family: 'Montserrat1';
+    background-color: red;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: inline;
+}
+.tour-card-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 1200px){
+    .trail_grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+   
+   
+}
+@media(max-width: 450px) {
+    .about_trail h1{
+        font-size: 26px;
+    }
+    .about_trail p{
+        padding-right: 20px;
+        padding-left: 20px;
+        
+    }
+}
