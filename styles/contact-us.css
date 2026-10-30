@@ -1,18 +1,30 @@
-.contact-section{
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/static/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: 'Montserrat1';
+    src: url(../fonts/static/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: 'Montserrat2';
+    src: url(../fonts/static/Montserrat-Bold.ttf);
+}
+
+.contact-section, .contact-us ,.contact-box{
     position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+}
+.bg-blur, .x{
+    position: absolute;
+
+}
+
+.contact-section{
+    min-height: auto;
 }
 .bg-blur {
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url("../pictures/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -23,20 +35,163 @@
 
 }
 .contact-us {
-    position: relative;
     z-index: 2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     align-items: stretch;
 }
-.contact-box{
-    background-color: rgb(6, 3, 38);
+
+.contact-section, .contact-us, .bg-blur, .contact-box p, .first-last-name, .first-last-name input, .email input, .subject input,
+.message textarea, .contact-info {
+    width: 100%;
+   
+}
+.message textarea, .contact-box,.bg-blur {
+    height: 100%;    
+}
+.contact-us, .contact-box, .contact-section, .button, .x, .contact-info {
+    display: flex;
+    justify-content: center;
+}
+.address, .first-last-name, .firstname, .lastname, .email, .subject, .message,.contact-information,.contact-box p{
+    display: flex;
+}
+.contact-section, .contact-us, .contact-box,.x  {
+     align-items: center;
+}
+.contact-box,.message textarea, .button button:hover, .address span, .contact-info span,.contact-info a,
+.first-last-name input, .email input, .subject input{
+ 
     color: white;
-    width: 60%;
-    height: 100%;
+}
+.contact-box, .firstname, .lastname, .email, .subject, .message, .contact-information, .address {
+      flex-direction: column;
+
+}
+.contact-box p, .address{
+    flex-wrap: wrap;
+
+}
+.address , .contact-box p {
+    text-align: center;
+}
+.first-last-name, .contact-info {
+    gap: 20px;
+}
+.first-last-name, .contact-info {
+    flex-direction: row;
+
+}
+
+.contact-box{
+    background-color: rgb(3, 1, 23);
+    max-width: 895px;
     padding: 40px;
+    padding-top: 60px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
+
+
+.contact-box span {
+    font-size: 55px;
+    color: red;
+    font-family: 'Montserrat2';
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+.contact-box p {
+    max-width: 520px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.contact-information {
+    max-width: 533px;
+    height: auto;
+    gap: 30px;
+}
+.contact-info, .firstname, .lastname, .email, .subject, .message{
+    flex: 1;
+}
+.firstname, .lastname, .email, .subject, .message{
+    gap: 10px;
+}
+.first-last-name input, .email input, .subject input {
+    height: 50px;
+
+}
+.first-last-name input, .email input, .subject input, .message textarea{
+    border: none;
+    border-bottom: 1px solid white;
+
+}
+
+
+.button button {
+    background-color: red;
+    border:1px solid red;
+    width: 90%;
+    padding: 11px 15px;
+    color: black;
+    font-family: 'Montserrat1';
+
+}
+.button button:hover, .first-last-name input, .email input, .subject input, .message textarea{
+    background: transparent;
+}
+.x {
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 10;
+   
+}
+.x svg{
+    width: 20px;
+    height: 20px;
+    fill: white;
+    
+}
+.x:hover svg{
+    fill: red;
+}
+
+.address {
+    margin-top: 30px;
+}
+.address span, .contact-info span {
+    font-size: 16px;
+    font-family: 'Montserrat';
+
+}
+.contact-info a{
+    text-decoration: none;
+}
+
+
+
+
+
+@media (max-width: 895px){
+    .contact-box{
+        padding: 60px 20px 20px;
+    }
+}
+@media(max-width: 576px){
+    .first-last-name{
+        flex-direction: column;
+    }
+    
+    .contact-box span{
+        font-size: 26px;
+
+    }
+    .address span {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+@media(max-width: 450px){
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
