@@ -39,6 +39,14 @@
     min-height: 100vh;
     align-items: stretch;
 }
+.contact-box span {
+    font-size: 55px;
+    color: red;
+    font-family: 'Montserrat2';
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+
 
 .contact-section, .contact-us, .bg-blur, .contact-box p, .first-last-name, .first-last-name input, .email input, .subject input,
 .message textarea, .contact-info {
@@ -91,13 +99,7 @@
 }
 
 
-.contact-box span {
-    font-size: 55px;
-    color: red;
-    font-family: 'Montserrat2';
-    letter-spacing: 0.01em;
-    margin-bottom: 20px;
-}
+
 .contact-box p {
     max-width: 520px;
     line-height: 1.6;

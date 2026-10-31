@@ -41,7 +41,9 @@ main{
     text-align: center;
 
 }
-
+/* .navigation a:hover{
+    color: red;
+} */
 .content-box h1{
     font-size: 65px;
     font-weight: bold;
