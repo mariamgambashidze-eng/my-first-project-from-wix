@@ -10,6 +10,9 @@
     font-family: 'Montserrat2';
     src: url(../fonts/static/Montserrat-Bold.ttf);
 }
+* {
+    font-family: 'Montserrat1';
+}
 main{
     width: 100%;
 }
@@ -21,6 +24,7 @@ main{
      display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
     height: auto;
     margin-top: 70px;
     line-height: 2;
@@ -28,17 +32,134 @@ main{
 }
 .information span {
     font-size: 33px;
-    font-family: 'Montserrat1';
-
+    font-family: 'Montserrat';
 }
 .information p {
     font-size:16px;
     font-family: 'Montserrat1';
 
+}
 
+.back a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat1';
+}
+.back svg {
+    fill: black;
+}
+.back span{
+    color: black;
+    font-size: 16px;
 }
 .data-time {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+.data-time-zone{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.data-time-zone h2{
+    font-family: 'Montserrat1';
+
+}
+.table {
+    width: 100%;
+    max-width: 250px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.november {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+.table th, .table td{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.div-table{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.availability p{
+    font-size: 16px;
+    font-family: 'Montserrat1';
+}
+.button {
+    font-size: 16px;
+    color: red;
+    background-color: black;
+    text-align: center;
+    padding: 12px 24px;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+}
+.choose{
+    width: 70%;
+}
+.book {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.book h2 {
+    font-size: 16px;
+    font-family: 'Montserrat1';
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    border: none;
+
+    margin-top: 20px;
+
+}
+
+.next {
+    color: red;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    padding: 11px 16px;
+    margin-top: 20px;
+    width: 100%;
+
+}
+.less-details {
+  display: none;
+}
+
+.less-details.active {
+  display: block; 
+}
+.data-time-zone:hover option{
+   border: 1px solid red;
+   background-color: white;
+}
+.td-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
