@@ -10,21 +10,30 @@
     font-family: 'Montserrat2';
     src: url(../fonts/static/Montserrat-Bold.ttf);
 }
-* {
+*, .data-time-zone h2, .availability p,.book h2, .information span, .back a, .information p {
     font-family: 'Montserrat1';
 }
-main{
+main,.schedule,.table,.table-class,.data-time-zone, .data-time,.next,.details,.button{
     width: 100%;
 }
+
+
 .container {
     max-width: 980px;
     margin: 0 auto;
 }
-.schedule {
-     display: flex;
+.schedule, .back a, .data-time-zone,.data-time, .div-table, .november, .book, .details,.td-div{
+    display: flex;
+
+}
+.schedule, .book,.td-div{
     flex-direction: column;
+  
+}
+
+
+.schedule {
     align-items: flex-start;
-    width: 100%;
     height: auto;
     margin-top: 70px;
     line-height: 2;
@@ -32,124 +41,83 @@ main{
 }
 .information span {
     font-size: 33px;
-    font-family: 'Montserrat';
 }
 .information p {
-    font-size:16px;
-    font-family: 'Montserrat1';
     flex-wrap: wrap;
 }
-
-.back a{
-    display: flex;
-    align-items: center;
+.back span, .information p.availability p,.book h2,.button, .next  {
+    font-size: 16px;
+}
+.november, .back a{
     gap: 10px;
+}
+.back a{
     margin-bottom: 20px;
-    font-family: 'Montserrat1';
 }
 .back svg {
     fill: black;
 }
 .back span{
     color: black;
-    font-size: 16px;
 }
-.data-time {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-    width: 100%;
-    margin-top: 30px;
-}
-.data-time-zone{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.data-time-zone,.data-time, .details {
     justify-content: space-between;
 }
-.data-time-zone h2{
-    font-family: 'Montserrat1';
+.details,.div-table{
+    flex-direction: row;
 
 }
-.table {
-    width: 100%;
-    max-width: 250px;
+.data-time {
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.td-div, .details,.november, .back a {
+    align-items: center;
+}
+.table{
     border-collapse: collapse;
     table-layout: fixed;
 }
-.table-class{
-    width: 100%;
+.table-class, .table{
     max-width: 250px;
 }
 .november {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
     margin-bottom: 10px;
 }
 .table th, .table td{
-    text-align: center;
     font-size: 14px;
     padding-bottom: 15px;
 }
+.next, .button, .table th, .table td{
+    text-align: center;
 
+}
 .div-table{
-    display: flex;
-    flex-direction: row;
     gap: 50px;
 }
-.availability p{
-    font-size: 16px;
-    font-family: 'Montserrat1';
-}
-.button {
-    font-size: 16px;
-    color: red;
+.next, .button {
     background-color: black;
-    text-align: center;
+    color: red;
     padding: 12px 24px;
-    border: none;
+}
+.details, .button,.next{
     margin-top: 20px;
-    width: 100%;
+
 }
 .choose{
     width: 70%;
 }
 .book {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     width: 30%;
 }
-.book h2 {
-    font-size: 16px;
-    font-family: 'Montserrat1';
-}
-.details{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+.next, .button, .details{
+    border: none;
 
+}
+.details, .data-time-zone:hover option{
     background-color: white;
-    border: none;
-
-    margin-top: 20px;
-
-}
-
-.next {
-    color: red;
-    background-color: black;
-    border: none;
-    font-size: 16px;
-    padding: 11px 16px;
-    margin-top: 20px;
-    width: 100%;
-
 }
 .less-details {
   display: none;
@@ -160,13 +128,15 @@ main{
 }
 .data-time-zone:hover option{
    border: 1px solid red;
-   background-color: white;
 }
-.td-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1000px){
@@ -179,7 +149,6 @@ main{
         width: 100%;
 
     }
-    
     .data-time, .schedule{
         justify-content: center;
         align-items: stretch;
@@ -194,20 +163,16 @@ main{
     
 }
 @media (max-width: 768px){
-    .container {
-        padding-right: 20px;
-        padding-left: 20px;
+    .container, .div-table {
         width: 100%;
     } 
     .div-table{
-        flex-direction: column;
         gap: 20px;
-        width: 100%;
     }
     .table-class{
         max-width: 100%;
     }
-    .data-time-zone{
+    .data-time-zone, .div-table{
         flex-direction: column;
 
     }
@@ -220,7 +185,10 @@ main{
     .back:first-child span {
         font-size: 12px;
     }
-    
+     .back svg{
+        width: 50px;
+        height: 16px;
+    }
 
 }
 @media (max-width: 525px){
@@ -231,15 +199,11 @@ main{
     .table{
         max-width: 100%;
     }   
-    .back svg{
-        width: 50px;
-        height: 16px;
-    }
+   
     .data-time{
         justify-content: flex-start;
     }
     .choose,.book {
         width: 100%; 
-        /* align-items: center;       */
     }
 }
