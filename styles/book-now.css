@@ -37,7 +37,7 @@ main{
 .information p {
     font-size:16px;
     font-family: 'Montserrat1';
-
+    flex-wrap: wrap;
 }
 
 .back a{
@@ -78,13 +78,16 @@ main{
     border-collapse: collapse;
     table-layout: fixed;
 }
+.table-class{
+    width: 100%;
+    max-width: 250px;
+}
 .november {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    /* text-align: center; */
 }
 .table th, .table td{
     text-align: center;
@@ -117,6 +120,7 @@ main{
 .book {
     display: flex;
     flex-direction: column;
+    width: 100%;
     width: 30%;
 }
 .book h2 {
@@ -162,4 +166,80 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+@media (max-width: 1000px){
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .data-time {
+        flex-direction: column;
+        width: 100%;
+
+    }
+    
+    .data-time, .schedule{
+        justify-content: center;
+        align-items: stretch;
+    }
+    .div-table{
+        width: 100%;
+        justify-content: space-between;
+       
+    }
+    
+    
+    
+}
+@media (max-width: 768px){
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+    } 
+    .div-table{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .table-class{
+        max-width: 100%;
+    }
+    .data-time-zone{
+        flex-direction: column;
+
+    }
+    .data-time{
+        justify-content: center;
+    }
+    .information span{
+        font-size: 20px;
+    }
+    .back:first-child span {
+        font-size: 12px;
+    }
+    
+
+}
+@media (max-width: 525px){
+    .table th, .table td{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .table{
+        max-width: 100%;
+    }   
+    .back svg{
+        width: 50px;
+        height: 16px;
+    }
+    .data-time{
+        justify-content: flex-start;
+    }
+    .choose,.book {
+        width: 100%; 
+        /* align-items: center;       */
+    }
 }
