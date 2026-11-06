@@ -99,8 +99,11 @@ main,.schedule,.table,.table-class,.data-time-zone, .data-time,.next,.details,.b
 }
 .next, .button {
     background-color: black;
-    color: red;
     padding: 12px 24px;
+}
+.next a, .next, .button{
+    color: red;
+
 }
 .details, .button,.next{
     margin-top: 20px;

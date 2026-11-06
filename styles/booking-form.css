@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/static/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: 'Montserrat1';
+    src: url(../fonts/static/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: 'Montserrat2';
+    src: url(../fonts/static/Montserrat-Bold.ttf);
+}
+
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    padding: 48px 20px;
+    margin-top: 60px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.back a{
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 52px;
+}
+.back svg{
+    width: 20px;
+    height: 20px;
+}
+.back span {
+    font-family: 'Montserrat1';
+}
+.form-container h1 {
+    font-size: 32px;
+    font-family: 'Montserrat2';
+}
+.booking-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+}
+.span{
+    margin-bottom: 30px;
+}
+.span a{
+    color: black;
+}
+.span p {
+    font-size: 14px;
+    padding: 9px 16px 9px 12px;
+    background-color: #0000000D;
+    letter-spacing: 0.05em;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+
+}
+.caption {
+    font-size: 20px;
+    font-family: 'Montserrat1';
+    letter-spacing: 0.05em;
+}
+.first-last-name, .email-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.inputs, .name{
+    display: flex;
+    flex-direction: column;
+}
+.inputs{
+    gap: 25px;
+}
+.name{
+    gap: 15px;
+}
