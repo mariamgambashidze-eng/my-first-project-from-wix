@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/static/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: 'Montserrat1';
+    src: url(../fonts/static/Montserrat-Light.ttf)
+}
+@font-face {
+    font-family: 'Montserrat2';
+    src: url(../fonts/static/Montserrat-Bold.ttf);
+}
+
+.container, .book, .form, .booking-form{
+    width: 100%;
+
+}
+.form-container, .back a, .booking-form, .inputs, .name, .first-last-name, .email-phone, .form, .book, .details, .total{
+    display: flex;
+
+}
+
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px 20px;
+    margin-top: 60px;
+}
+.form-container, .form, .inputs, .name, .book {
+    flex-direction: column;
+}
+.back a{
+    gap: 10px;
+    padding-bottom: 52px;
+}
+.details, .back a {
+    align-items: center;
+    
+}
+.back svg{
+    width: 20px;
+    height: 20px;
+}
+.back span, .caption, .more-details h2, .more-details .half, .more-details p, .details 
+ {
+    font-family: 'Montserrat1';
+}
+.form-container h1 {
+    font-size: 32px;
+    font-family: 'Montserrat2';
+}
+.booking-form {
+    margin-top: 30px;
+}
+.booking-form, .first-last-name, .email-phone, .details, .total  {
+    flex-direction: row;
+}
+
+.total, .first-last-name, .email-phone {
+    justify-content: space-between;
+}
+.span{
+    margin-bottom: 30px;
+    
+}
+.span a, .back a{
+    color: black;
+}
+.span p {
+    padding: 20px 16px 20px 12px;
+    background-color: #0000000D;
+    letter-spacing: 0.05em;
+}
+.form{
+    max-width: 650px;
+}
+.caption {
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    padding-bottom: 20px;
+}
+.first-last-name, .email-phone {
+    gap: 20px;
+}
+
+.inputs{
+    gap: 25px;
+
+}
+.span p, input.less-details p, .total p, textarea  {
+    font-size: 14px;
+
+}
+.name{
+    gap: 15px;
+}
+input {
+    padding: 0 12px 0 10px;
+    width: 292px;
+}
+textarea, input{
+    padding-top: 8px;
+    padding-bottom: 8px;
+   
+}
+.book {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.more-details h2 {
+    font-size: 20px;
+
+}
+.more-details .half, .more-details p{
+    line-height: 1.5;
+
+}
+.details {
+    background-color: white;
+    border: none;
+    gap: 5px;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.more-details .half, .more-details p, .next a{
+    font-size: 16px;
+
+}
+.next a{
+    color: red;
+}
+
+.next {
+    min-width: 100%;
+    padding: 11px 16px;
+    background-color: black;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 90px;
+    padding: 0 12px 0 10px;
+}
+
+ 
+.less-details {
+    display: none;
+}
+.less-details.active, .caption  {
+    display: block;
+}
+
+@media (max-width: 950px){
+    .booking-form {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .book {
+        padding: 0;
+    }
+}
+@media(max-width: 643px){
+    .first-last-name, .email-phone {
+        flex-direction: column;
+    }
+    input {
+        width: 100%;
+    }
+}
+@media(max-width: 486px){
+    .form-container h1{
+        font-size: 25px;
+    }
+}
