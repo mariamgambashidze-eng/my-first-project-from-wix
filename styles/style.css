@@ -354,6 +354,9 @@ main{
     flex-shrink: 0;
     margin-left: auto;
 }
+.post1_text a{
+    color: white;
+}
 
 
 
