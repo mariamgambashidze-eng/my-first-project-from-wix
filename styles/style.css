@@ -354,10 +354,12 @@ main{
     flex-shrink: 0;
     margin-left: auto;
 }
-.post1_text a{
+.post1_text a, .post2_text a, .post3_text a{
     color: white;
 }
-
+.post1_text p a:hover, .post2_text p a:hover, .post3_text p a:hover{
+    color: red;
+}
 
 
 
