@@ -19,7 +19,7 @@
     display: flex;
 
 }
-
+/* textarea */
 
 .container {
     max-width: 980px;
@@ -150,6 +150,9 @@ textarea {
 }
 .less-details.active, .caption  {
     display: block;
+}
+textarea{
+    width: 100%;
 }
 
 @media (max-width: 950px){

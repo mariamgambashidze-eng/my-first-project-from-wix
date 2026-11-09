@@ -11,7 +11,7 @@
     src: url(../fonts/static/Montserrat-Bold.ttf);
 }
 
-.container, .book, .form, .booking-form{
+.container, .book, .form, .booking-form, textarea{
     width: 100%;
 
 }

@@ -135,7 +135,7 @@ textarea, input{
 .next {
     min-width: 100%;
     padding: 11px 16px;
-    /* background-color: black; */
+    background-color: black;
     margin-top: 5px;
     border: none;
 }
@@ -154,6 +154,9 @@ textarea {
 }
 .span a{
     text-decoration: underline;
+}
+textarea {
+    width: 100%;
 }
 
 @media (max-width: 950px){
