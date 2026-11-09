@@ -22,6 +22,7 @@ main{
     height: auto;
     
 }
+
 .about_news{
     display: flex;
     flex-direction: column;
@@ -61,7 +62,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
-    align-items:  center;
+    align-items:  stretch;
 }
 .post1{
     display: flex;
@@ -71,7 +72,7 @@ main{
     width: 100%;
 
 }
-
+.all
 .post1_picture {
     width: 100%;
     /* max-width: 100%;
@@ -90,19 +91,26 @@ main{
 }
 
 .all {
+    display: flex;
+    flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 18px;
     width: auto;
- 
+    flex: 1;
 }
-
+.post1_text{
+    flex: 1;
+    border-bottom: 1px solid rgb(176, 172, 172);
+}
 .post1_text p {
     text-align: start;
      font-family: 'Montserrat2';
    
 }
-
+.post1_text hr {
+    display: none;
+}
 .post1_social{
     color: black;
     display: flex;

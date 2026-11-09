@@ -154,12 +154,6 @@ main{
     color: black;
 }
 .posts {
-    /* display: flex;
-    flex-direction: row; */
-    /* justify-content: space-between; */
-    /* gap: 20px; */
-    /* align-items: stretch;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
@@ -189,6 +183,11 @@ main{
     align-items: center;
     margin-top: auto;
 }
+.post1_text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 .view_comment{
     display: flex;
     flex-direction: row;
@@ -207,6 +206,8 @@ main{
 }
 .post1_text hr {
     margin-top: auto;
+    width: 100%;
+    border-top: 1px solid rgb(176, 172, 172);
 }
 
 .comment-div {
