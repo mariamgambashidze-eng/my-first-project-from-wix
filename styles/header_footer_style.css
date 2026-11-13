@@ -16,6 +16,11 @@ header,.footer-div, .sidebar{
 
 } 
 header {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
     padding: 0px 60px 0px 60px;
 }
 .orange_box, header, .nav, .head, .log_in, 
@@ -174,6 +179,8 @@ header,
     font-family: 'Montserrat';
 }
 .footer_book a{
+    display: inline-block;
+    transition: transform 0.3s ease;
     padding: 12px 28px;
     border: 1px solid red;
     background-color: red;
@@ -187,7 +194,13 @@ header,
 .navigation a:hover{
     color: red;
 }
-
+.logo_text a:hover, .logo_text h3:hover, .logo_text p:hover, .footer_span p:hover{
+    color: red;
+}
+.footer_book a:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
 
 
 
