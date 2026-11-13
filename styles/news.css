@@ -65,6 +65,9 @@ main{
     align-items:  stretch;
 }
 .post1{
+    display: inline-block;
+    transition: transform 0.3s ease;
+
     display: flex;
     background-color: #f7f7f7;
     flex-direction: column;
@@ -72,16 +75,16 @@ main{
     width: 100%;
 
 }
+.post1:hover{
+    transform: scale(1.05);
+    background-color: rgb(241, 241, 241);
+}
+
 .all
 .post1_picture {
     width: 100%;
-    /* max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; */
 }
 
-/* 1 */
 .post1_picture img {
     width: 100%;
     max-width: 100%;

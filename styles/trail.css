@@ -76,7 +76,7 @@
     font-size: 17px;
     font-family: 'Montserrat1';
     background-color: red;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 20px;
     display: inline;
     color: black;
@@ -86,6 +86,20 @@
     height: auto;
     object-fit: cover;
     display: block;
+}
+
+.tour-card{
+    display: inline-block;
+    transition: transform 0.3s ease;
+
+}
+.tour-card:hover{
+    transform: scale(1.05);
+}
+.tour-card-text a:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: black;
 }
 
 @media (max-width: 1200px){

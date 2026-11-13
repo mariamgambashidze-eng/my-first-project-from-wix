@@ -14,28 +14,10 @@
 
  .about_mountain  
 {
-     display: flex;
-}
-
-
- .about_mountain p {
-        text-align: center;
-
-}
-
- .about_mountain  {
-        flex-direction: column;
-
-}
-
-.about_mountain {
-        justify-content: center;
-
-}
-
-
-
-.about_mountain {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
 }
@@ -188,8 +170,9 @@ main{
     gap: 20px;
 }
 .picture_container_img img{
-    /* width: 285px;
-    height: auto; */
+     display: inline-block;
+    transition: transform 0.3s ease;
+
     width: 100%;
     max-width: 100%;
     height: 250px;
@@ -204,7 +187,9 @@ main{
 .picture_container_text{
     margin-bottom: 90px;
 }
-
+.picture_container_img img:hover{
+    transform: scale(1.1);
+}
 
 
 

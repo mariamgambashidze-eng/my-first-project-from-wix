@@ -387,6 +387,10 @@ main{
     transform: scale(1.1);
 }
 
+.sidebar svg:hover, .nav svg:hover {
+    fill:red;
+}
+
 
 
 
