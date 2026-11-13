@@ -10,167 +10,192 @@
     font-family: 'Montserrat2';
     src: url(../fonts/static/Montserrat-Bold.ttf);
 }
+@font-face {
+    font-family: 'Montserrat3';
+    src: url(../fonts/static/Montserrat-Medium.ttf);
+}
 
-.container, .book, .form, .booking-form, textarea{
+
+main {
     width: 100%;
-
 }
-.form-container, .back a, .booking-form, .inputs, .name, .first-last-name, .email-phone, .form, .book, .details, .total{
-    display: flex;
-
-}
-
-
-.container {
+.container{
+    width: 100%;
     max-width: 980px;
     margin: 0 auto;
     padding: 48px 20px;
     margin-top: 60px;
+
 }
-.form-container, .form, .inputs, .name, .book {
+.form-container {
+    display: flex;
     flex-direction: column;
+
 }
 .back a{
-    gap: 10px;
-    padding-bottom: 52px;
-}
-.details, .back a {
+    display: flex;
     align-items: center;
-    
 }
-.back svg{
-    width: 20px;
-    height: 20px;
+.back svg {
+    height: 24px;
+    fill: black;
 }
-.back span, .caption, .more-details h2, .more-details .half, .more-details p, .details 
- {
-    font-family: 'Montserrat1';
-}
-.form-container h1 {
-    font-size: 32px;
-    font-family: 'Montserrat2';
-}
-.booking-form {
-    margin-top: 30px;
-}
-.booking-form, .first-last-name, .email-phone, .details, .total  {
-    flex-direction: row;
-}
-
-.total, .first-last-name, .email-phone {
-    justify-content: space-between;
-}
-.span{
-    margin-bottom: 30px;
-    
-}
-.span a, .back a{
+.back span {
+    font-size: 18px;
     color: black;
 }
+.form-container h1 {
+    font-size: 40px;
+    margin-top: 35px;
+    font-family: 'Montserrat2';
+}
 .span p {
-    padding: 20px 16px 20px 12px;
-    background-color: #0000000D;
-    letter-spacing: 0.05em;
+    color: black;
+    margin-top: 30px;
+    background-color: rgb(228, 223, 223);
+    padding: 12px 6px;
 }
-.form{
-    max-width: 650px;
-}
-.caption {
-    font-size: 20px;
-    letter-spacing: 0.05em;
-    padding-bottom: 20px;
-}
-.first-last-name, .email-phone {
-    gap: 20px;
-}
-
-.inputs{
-    gap: 25px;
+.span a {
+    color: black;
 
 }
-.span p, input.less-details p, .total p, textarea  {
-    font-size: 14px;
-
+.client {
+    font-size: 20px;;
 }
-.name{
+.span{
+    margin-bottom: 20px;
+}
+form:nth-child(2) p {
+    font-size: 25px;
+    font-family: 'Montserrat1';
+    margin-top: 20px;
+}
+.first-lastname, .email-phone {
+    display: flex;
+    flex-direction: row;
     gap: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    justify-content: space-between;
+    width: 100%;
 }
-input {
+.firstname, .lastname, .email, .phone, .textarea {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    flex: 1;
+}
+input{
+    display: block;
+    height: 35px;
+    width:100%;
     padding: 0 12px 0 10px;
-    width: 292px;
+    box-sizing: border-box;
 }
-textarea, input{
-    padding-top: 8px;
-    padding-bottom: 8px;
-   
-}
-.book {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-.more-details h2 {
-    font-size: 20px;
+
+textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px 6px;
 
 }
-.more-details .half, .more-details p{
-    line-height: 1.5;
 
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex:1;
 }
-.details {
-    background-color: white;
-    border: none;
+.formcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.booking-details {
+    display: flex;
+    flex-direction: column;
     gap: 5px;
-    padding-left: 0;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    width: 30%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
-.more-details .half, .more-details p, .next a{
+
+.booking-details h2 {
+    font-size: 24px;
+    font-family: 'Montserrat2';
+}
+
+.half{
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+.booking-details  p {
     font-size: 16px;
-
+    font-family: 'Montserrat3';
 }
-.next a{
-    color: red;
+ .details {
+    border: none;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    align-items: center;
 }
-
 .next {
-    min-width: 100%;
-    padding: 11px 16px;
+    width: 100%;
     background-color: black;
-    margin-top: 5px;
+    padding: 10px 16px;
+    color: red;
+    font-size: 20px;
 }
 
-textarea {
-    height: 90px;
-    padding: 0 12px 0 10px;
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
- 
 .less-details {
+    justify-content: space-between;
     display: none;
 }
-.less-details.active, .caption  {
+.less-details.active  {
     display: block;
 }
-
-@media (max-width: 950px){
-    .booking-form {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .book {
-        padding: 0;
-    }
+.next:hover {
+    background-color: white;
+    border: 1px solid black;
 }
-@media(max-width: 643px){
-    .first-last-name, .email-phone {
+.next:active {
+    background-color: black;
+    border: none;
+}
+
+
+@media (max-width: 936px){
+    .formcontainer {
         flex-direction: column;
     }
-    input {
+    .booking-details {
         width: 100%;
     }
 }
-@media(max-width: 486px){
-    .form-container h1{
+@media(max-width: 455px){
+    .first-lastname, .email-phone {
+        flex-direction: column;
+    }
+    .form-container h1 {
         font-size: 25px;
+    }
+    .booking-details h2 {
+        font-size: 20px;
+    }
+    .booking-details  p{
+        font-size: 14px;
     }
 }

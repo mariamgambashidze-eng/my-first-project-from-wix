@@ -99,7 +99,7 @@ main,.schedule,.table,.table-class,.data-time-zone, .data-time,.next,.details,.b
 }
 .next, .button {
     background-color: black;
-    padding: 12px 24px;
+    padding: 12px 20px;
 }
 .next a, .next, .button{
     color: red;
@@ -132,12 +132,27 @@ main,.schedule,.table,.table-class,.data-time-zone, .data-time,.next,.details,.b
 .data-time-zone:hover option{
    border: 1px solid red;
 }
+.next:hover, .button:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+.next:active, .button:active{
+    background-color: black;
+    border: none;
+}
+.more-details{
+    width: 100%;
+}
+.more-details .next{
+    width: 100%;
+}
+.details{
+    padding-left: 0;
+}
+.next {
+    display: block;
 
-
-
-
-
-
+}
 
 
 

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>booking form</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/booking-form.css">
     <link rel="stylesheet" href="../styles/header_footer_style.css">
+    <link rel="stylesheet" href="../styles/booking-form.css">
 </head>
 <body>
-<header>
+    <header>
         <div class="orange_box">
             <div class="logo">
                <a href="../index.html"> 
@@ -37,10 +37,10 @@
                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
                         </li>
                         <li>
-                            <a href="./pages/about.html">About</a>
+                            <a href="./about.html">About</a>
                         </li>
                         <li>
-                            <a href="./pages/trail.html">Trails</a>
+                            <a href="./trail.html">Trails</a>
                         </li>
                         <li>
                             <a href="./news.html">News</a>
@@ -55,10 +55,10 @@
                     </ul>
                     <ul class="nav">
                         <li class="hide_mobile">
-                            <a href="./pages/about.html">About</a>
+                            <a href="./about.html">About</a>
                         </li>
                         <li class="hide_mobile">
-                            <a href="./pages/trail.html">Trails</a>
+                            <a href="./trail.html">Trails</a>
                         </li>
                         <li class="hide_mobile">
                             <a href="./news.html">News</a>
@@ -67,7 +67,7 @@
                             <a href="./contact-us.html">Contact</a>
                         </li>
                         <li class="log_in hide_mobile">
-                            <a href="./demo.html"><img src="../pictures/download.jpg" alt="login logo"></a>
+                            <a href=""><img src="../pictures/download.jpg" alt="login logo"></a>
                         </li>
                         <li class="log_in hide_mobile">
                             <a href="./demo.html" target="blank">Log In</a>
@@ -80,9 +80,9 @@
                 </nav>
             </div>    
         </div>
-</header>
+    </header>
 
-<main>
+ <main>
     <section class="container">
         <div class="form-container">
             <div class="back">
@@ -92,91 +92,81 @@
                 </a>
             </div>
             <h1>Booking Form</h1>
-            <div class="booking-form">
+               <form>
+                    <div class="formcontainer">
+                        <div class="inputs-container">
+                            <div class="span">
+                                <p>Have an account? <a href="./demo.html">Log in</a></p>
+                            </div>
+                            <p class="client">Clien Details</p>
 
-                <div class="form">
-                    <div class="span">
-                        <p>Have an account? <a href="./demo.html">Log in</a></p>
-                    </div>
-                    <div class="noname">
-                        <form>
-                            <span class="caption">Clien Details</span>
-                            <div class="inputs">
-                                <div class="first-last-name">
-                                    <div class="name">
-                                        <label for="firstname">First name *</label>
-                                        <input type="text" id="firstname" required placeholder="jjj">
-                                    </div>
-                                    <div class="name">
-                                        <label for="lastname">Last name *</label>
-                                        <input type="text" id="lastname" required placeholder="kkk">
-                                    </div>
+                            <div class="first-lastname">
+                                <div class="firstname">
+                                    <label for="firstname">First name *</label>
+                                    <input type="text" id="firstname" required>
+                                </div>
 
+                                <div class="lastname">
+                                    <label for="lastname">Last name *</label>
+                                    <input type="text" id="lastname" required>
+                                </div>
+                            </div>
+
+                            <div class="email-phone">
+                                <div class="email">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div class="phone">
+                                    <label for="phone">Phone *</label>
+                                    <input type="number" id="phone" required>
                                 </div>
                                 
-                                <div class="email-phone">
-                                    <div class="name">
-                                        <label for="email">Email *</label>
-                                        <input type="email" id="email" required placeholder="test@gmai.com">
-                                    </div>
-                                    <div class="name">
-                                        <label for="phone">Phone *</label>
-                                        <input type="number" id="phone" required placeholder="555 ">
-                                    </div>
-                                    
-                                </div>
-                                    <div class="name">
-                                        <label for="message">Add your message *</label>
-                                        <textarea id="message" row="50" placeholder="add your text here"></textarea>
-                                    </div>
                             </div>
-                        </form>
-                    </div>
-
-                    
-                </div>
-                
-                <div class="book">
-                    <div class="more-details">
-                        <h2>Booking Details</h2>
-                        <hr>
-                        <span class="half">Half Day Snowshoe</span>
-                        <p>November 9, 2026 at 7:00 am</p>
-                        
-                        
-                        <button class="details more-btn">
-                            <h3>More details</h3>
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="sxF4XWx" data-hook="expandIcon" data-label="Expand-ChevronDown"><path fill-rule="evenodd" d="M18.2546728,8.18171329 L18.9617796,8.88882007 L12.5952867,15.2537133 L12.5978964,15.2558012 L11.8907896,15.962908 L11.8882867,15.9607133 L11.8874628,15.9617796 L11.180356,15.2546728 L11.1812867,15.2527133 L4.81828671,8.88882007 L5.52539349,8.18171329 L11.8882867,14.5457133 L18.2546728,8.18171329 Z"></path></svg>
-                        </button>
-                        <div class="less-details">
-                            <p>$80</p>                  
-                            <p>San Francisco</p>
-                            <p>Staff Member #2</p>
-                            <p>5 hr</p>
-                            <button class="details less-btn">
-                                <h3>Less details</h3>
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="sxF4XWx" data-hook="collapseIcon" data-label="Collapse-ChevronUp"><path fill-rule="evenodd" d="M11.8833796,8.18133292 L11.8872867,8.18433292 L11.8900332,8.1824613 L12.5971399,8.88956809 L12.5942867,8.89133292 L18.9617796,15.2535291 L18.2546728,15.9606359 L11.8862867,9.59933292 L5.52539349,15.9606359 L4.81828671,15.2535291 L11.1792867,8.89233292 L11.1762728,8.8884397 L11.8833796,8.18133292 Z"></path></svg>
-                            </button>
-                            <hr>
+                            <div class="textarea">
+                                <label for="textarea"></label>
+                                <textarea id="textarea" row="50" placeholder="write your comment here"></textarea>
+                            </div>
                         </div>
+
+
+                        <div class="booking-details">
+                            <h2>Booking Details</h2>
+                            <hr>
+                            <p class="half">Half Day Snowshoe</p>
+                            <p>November 9, 2026 at 10:00 am</p>
+                            <button class="details more-btn" type="button">
+                                <h3>More details</h3>
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="sxF4XWx" data-hook="expandIcon" data-label="Expand-ChevronDown"><path fill-rule="evenodd" d="M18.2546728,8.18171329 L18.9617796,8.88882007 L12.5952867,15.2537133 L12.5978964,15.2558012 L11.8907896,15.962908 L11.8882867,15.9607133 L11.8874628,15.9617796 L11.180356,15.2546728 L11.1812867,15.2527133 L4.81828671,8.88882007 L5.52539349,8.18171329 L11.8882867,14.5457133 L18.2546728,8.18171329 Z"></path></svg>
+                            </button>
+                            <div class="less-details">
+                                <p>$80</p>                  
+                                <p>San Francisco</p>
+                                <p>Staff Member #2</p>
+                                <p>5 hr</p>
+                                <button class="details less-btn" type="button">
+                                    <h3>Less details</h3>
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="sxF4XWx" data-hook="collapseIcon" data-label="Collapse-ChevronUp"><path fill-rule="evenodd" d="M11.8833796,8.18133292 L11.8872867,8.18433292 L11.8900332,8.1824613 L12.5971399,8.88956809 L12.5942867,8.89133292 L18.9617796,15.2535291 L18.2546728,15.9606359 L11.8862867,9.59933292 L5.52539349,15.9606359 L4.81828671,15.2535291 L11.1792867,8.89233292 L11.1762728,8.8884397 L11.8833796,8.18133292 Z"></path></svg>
+                                </button>
+                                <hr>
+                            </div>
                             <p>Payment Details</p>
                             <div class="total">
                                 <p>Total</p>
                                 <p>80$</p>
                             </div>
-                            <button class="next">
-                                <a href="./booking-form.html">Next</a>
+                            <button class="next" type="submit">
+                                <p>Next</p>
                             </button>
-                            
-                        
+                        </div>
+
                     </div>
-                </div>
 
-            </div>
+                    
+               </form>
         </div>
-</section>
-</main>
-
+    </section>
+ </main>
 
 
 <footer>
@@ -218,10 +208,10 @@
                                     <a href="./trail.html">Trails</a>
                                 </li>
                                 <li>
-                                    <a href="./news.html">News</a>
+                                    <a href="">News</a>
                                 </li> 
                                 <li>
-                                    <a href="./contact-us.html">Contact</a>
+                                    <a href="">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -236,7 +226,7 @@
                     </div>
 
                     <div class="footer_book">
-                        <a href="./trail.html">Book Now</a>
+                        <a href="#">Book Now</a>
                     </div>
                 </div>
 
@@ -250,7 +240,6 @@
     </div>
 </footer>
 
-
 <script>
     function showSidebar() {
         const sidebar = document.querySelector('.sidebar')
@@ -261,21 +250,20 @@
         sidebar.style.display='none'
 
     }
-</script>
-<script>
-const moreBtn = document.querySelector('.more-btn');
-const lessBtn = document.querySelector('.less-btn');
-const infoBox = document.querySelector('.less-details');
 
-moreBtn.addEventListener('click', () => {
-    infoBox.classList.add('active');
-    moreBtn.style.display = 'none';
-});
+    const moreBtn = document.querySelector('.more-btn');
+    const lessBtn = document.querySelector('.less-btn');
+    const infoBox = document.querySelector('.less-details');
 
-lessBtn.addEventListener('click', () => {
-    infoBox.classList.remove('active');
-    moreBtn.style.display = 'flex';
-});
+    moreBtn.addEventListener('click', () => {
+        infoBox.classList.add('active');
+        moreBtn.style.display = 'none';
+    });
+
+    lessBtn.addEventListener('click', () => {
+        infoBox.classList.remove('active');
+        moreBtn.style.display = 'flex';
+    });
 </script>
 </body>
 </html>
