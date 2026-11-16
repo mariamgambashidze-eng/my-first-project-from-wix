@@ -12,60 +12,59 @@
 }
 
 
- .about_mountain  
-{
+
+.container1, .sleet_gallery_pictures, .sleet_gallery, .snow_fall_text, .adventure_text, .safety_text, .snow_fall, .adventure, .safety,
+.about_mountain, .all{
     display: flex;
+
+}
+.sleet_gallery, .snow_fall_text, .adventure_text, .safety_text, .adventure_text p, .safety_text p,.snow_fall_text p,
+ .about_mountain {
     text-align: center;
+
+}
+.container1, .sleet_gallery_pictures, .sleet_gallery, .snow_fall_text, .adventure_text, .safety_text, 
+ .about_mountain, .all {
     flex-direction: column;
+}
+
+.about_mountain {
     justify-content: center;
+}
+.snow_fall_text, .adventure_text, .safety_text, .about_mountain {
     align-items: center;
 
 }
 
-.fa-copyright, .about_mountain p {
+.fa-copyright, .about_mountain p, .snow_fall_text p, .adventure_text p, .safety_text p {
     font-size: 17px;
 
 }
 
- .fa-copyright {
-    color: white;
+section, .container, .first_section, .all {
+    height: auto;
 }
-
-
-
-
-
-
-
-section {
-       height: auto;
- 
-}
-main{
+main, .first_section, .all, .snow_fall, .adventure, .safety, .snow_fall_picture img, .adventure_picture img,
+ .safety_picture img, .sleet_gallery, .sleet_gallery_pictures, .picture_container_img img
+ {
     width: 100%;
 }
 .first_section{
-    width: 100%;
-    background-color: #f7f7f7;
     margin: 0;
-    height: auto;
     margin-bottom: -90px;
 }
 .container{
     max-width: 1200px;
-    margin: 0 auto;
-    height: aut0;
+}
+.first_section, .container{
     background-color: #f7f7f7;
 
 }
-
- .about_mountain {
-    width: 100%;
-}
-
-.about_mountain h1 {
+.about_mountain h1, .picture_container_text span{
     font-size: 55px;
-    font-family: 'Montserrat2';
+
+}
+.about_mountain h1 {
     letter-spacing: normal;
     line-height: normal;
     padding-bottom: 30px;
@@ -79,37 +78,33 @@ main{
     padding-bottom: 140px;
 }
 
-.all {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+.all, .container, .adventure_text p, .safety_text p,.snow_fall_text p  {
     margin: 0 auto;
 }
 .snow_fall_text span, .adventure span, .safety_text span {
     font-size: 30px;
-    font-family: 'Montserrat2';
 }
+.about_mountain h1, .snow_fall_text span, .adventure span, .safety_text span, .picture_container_text span{
+    font-family: 'Montserrat2';
+
+}
+
 .adventure span{
     color: black;
 }
 
 .snow_fall_text p, .adventure_text p, .safety_text p {
-    font-size: 17px;
     font-family: 'Montserrat';
 }
-.snow_fall_text p, .snow_fall_text span{
+.snow_fall_text p, .snow_fall_text span, .fa-copyright{
     color: white;
-}
+} 
 .adventure_text p, .safety_text p,.snow_fall_text p  {
     max-width: 375px;
-    text-align: center;
-    margin: 0 auto;
     overflow-wrap: break-word;
 }
+
 .snow_fall, .adventure, .safety {
-    display: flex;
-    width: 100%;
     min-height: 500px;
 }
 .snow_fall{
@@ -122,44 +117,31 @@ main{
     flex: 0 0 50%;
     box-sizing: border-box;
 }
+
 .snow_fall_text, .adventure_text, .safety_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     gap: 40px;
     padding: 40px 30px;
- 
     margin: auto 0;
-    height: 100%;
 }
-.snow_fall_picture img, .adventure_picture img, .safety_picture img{
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
+.snow_fall_picture img, .adventure_picture img, .safety_picture img, .snow_fall_text, .adventure_text, .safety_text{
     height: 100%;
-}
-.sleet_gallery{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    height: 500px;
-    border: 2px solid rgb(185, 40, 40);
 
 }
-.sleet_gallery_pictures{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.picture_container_img img, .snow_fall_picture img, .adventure_picture img, .safety_picture img{
+    object-fit: cover;
+
+}
+.snow_fall_picture img, .adventure_picture img, .safety_picture img{
+    object-position: center;
+}
+.sleet_gallery{
+    height: 500px;
+}
+.sleet_gallery_pictures, .sleet_gallery{
     border: 2px solid rgb(139, 28, 28);
 
 }
 .container1 {
-    display: flex;
-    flex-direction: column;
     max-width: 1200px;
     margin: 140px auto;
     text-align: center;
@@ -172,16 +154,13 @@ main{
 .picture_container_img img{
      display: inline-block;
     transition: transform 0.3s ease;
-
-    width: 100%;
     max-width: 100%;
     height: 250px;
-    object-fit: cover;
+}
+.picture_container_img img, .snow_fall_picture img, .adventure_picture img, .safety_picture img{
     display: block;
 }
 .picture_container_text span{
-    font-size: 55px;
-    font-family: 'Montserrat2';
     letter-spacing: 0.01em;
 }
 .picture_container_text{
