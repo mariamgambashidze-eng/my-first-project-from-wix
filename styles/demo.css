@@ -6,15 +6,17 @@
 main{
     width: 100%;
     height: 90vh;
-    display: flex;
-    align-items: center;
     justify-content: center;
+}
+.container, main{
+    align-items: center;
+}
+main, .container{
+    display: flex;
 
 }
 .container{
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 h1 {
     font-size: 52px;
@@ -22,13 +24,14 @@ h1 {
     font-family: 'Montserrat1';
     margin-bottom: 10px;
 }
-p {
+.close, p{
     font-size: 18px;
+
+}
+p {
     margin-bottom: 40px;
 }
 .close {
-   
-    font-size: 18px;
     background-color: black;
     color: white;
     width: 180px;

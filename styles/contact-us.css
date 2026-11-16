@@ -143,14 +143,12 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
-    z-index: 10;
-   
+    z-index: 10; 
 }
 .x svg{
     width: 20px;
     height: 20px;
-    fill: white;
-    
+    fill: white;   
 }
 .x:hover svg{
     fill: red;
@@ -167,7 +165,9 @@
 .contact-info a{
     text-decoration: none;
 }
-
+.contact-section{
+    overflow: hidden;
+}
 
 
 

@@ -153,7 +153,10 @@ main,.schedule,.table,.table-class,.data-time-zone, .data-time,.next,.details,.b
     display: block;
 
 }
-
+.choose hr, .book hr {
+    width: 100%;
+    border: 1px solid grey;
+}
 
 
 
