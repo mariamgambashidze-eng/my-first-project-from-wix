@@ -363,6 +363,9 @@ main{
     gap: 5px;
 
 }
+.view_comment svg {
+    fill: white;
+}
 .like {
     flex-shrink: 0;
     margin-left: auto;
@@ -390,6 +393,7 @@ main{
 .sidebar svg:hover, .nav svg:hover {
     fill:red;
 }
+
 
 
 
@@ -528,6 +532,9 @@ main{
         .sleet-news p{
             padding-left: 10px;
             padding-right: 10px;
+        }
+        .view_comment svg {
+            width: 20px;
         }
     
 }
